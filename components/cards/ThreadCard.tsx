@@ -27,7 +27,7 @@ interface Props {
     isComment?: boolean;
 }
 
-const ThreadCard = ({
+function ThreadCard({
     id,
     currentUserId,
     parentId,
@@ -37,7 +37,7 @@ const ThreadCard = ({
     createdAt,
     comments,
     isComment,
-}: Props) => {
+}: Props) {
     return (
         <article className={`flex w-full flex-col rounded-xl
         ${isComment ? 'px-0 xs:px-7' : 'bg-dark-2 p-7'}`}>
@@ -83,13 +83,13 @@ const ThreadCard = ({
                             )}
                         </div>
                     </div>
-                </div>
-             
+                </div> 
+            </div>
+            
             {!isComment && community && (
                 <Link href={`/communities/${community.id}`} className="mt-5 flex items-center">
                     <p className="text-subtle-medium text-gray-1">
-                        {formatDateString(createdAt)}
-                        - {community.name} Community
+                    {formatDateString(createdAt)} - {community.name} Community
                     </p>
 
                     <Image
@@ -101,9 +101,7 @@ const ThreadCard = ({
                     />
                 </Link>
             )}
-            </div>
         </article>
-    );
-}
+    )}
 
 export default ThreadCard;
