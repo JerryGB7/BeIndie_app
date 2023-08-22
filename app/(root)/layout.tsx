@@ -10,7 +10,7 @@ import Bottombar from '@/components/shared/Bottombar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "BeIndie",
+  title: "IndieComms",
   description: 'A Chat Application For Indie Game Developers'
 }
 

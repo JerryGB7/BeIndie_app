@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 
 
 export const metadata = {
-    title: "BeIndie",
+    title: "IndieComms",
     description: 'A Chat Application For Indie Game Developers'
 }
 
